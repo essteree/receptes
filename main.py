@@ -1,6 +1,6 @@
 def izmaksas_receptei(recepte, daudzums, cena):
     summa = 0
-    for sastavdala, daudzums in recepte:
+    for sastavdala, daudzums in recepte.items():
         summa += daudzums * cena[sastavdala]
     return summa
 
@@ -12,3 +12,4 @@ def izmaksas_kopa(abolu_svars):
 
 aboli = 1.5
 print("Uz {} kg ābolu izmaksas būs {} EUR".format(aboli, izmaksas_kopa(aboli)))
+#testiņš
